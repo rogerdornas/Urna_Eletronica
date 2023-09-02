@@ -18,3 +18,4 @@ Esse projeto simula uma urna eletrônica para a eleição de um presidente e dep
 - Como eleitor, gostaria de receber uma mensagem de confirmação após a votação;
 - Como eleitor, gostaria de receber por email os candidatos em que votei;
 - Como candidato, gostaria de receber por email o resultado da votação;
+- Como usuário, desejo me candidatar
