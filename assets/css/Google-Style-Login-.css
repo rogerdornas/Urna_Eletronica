@@ -1,0 +1,87 @@
+.login-card, .register-card {
+  padding: 40px 40px;
+  background-color: var(--backgroung-blue);
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  position: fixed;
+}
+
+.login-card .profile-img-card, .register-card .profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.login-card .profile-name-card {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0 0;
+  min-height: 1em;
+}
+
+.login-card .reauth-email, .register-card .reauth-email {
+  display: block;
+  color: #404040;
+  line-height: 2;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.login-card .form-signin input[type=email], .login-card .form-signin input[type=password], .login-card .form-signin input[type=text], .login-card .form-signin button {
+  height: 44px;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  z-index: 1;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.register-card .form-signin input[type=email], .register-card .form-signin input[type=data], .register-card .form-signin input[type=password], .register-card .form-signin input[type=text], .register-card .form-signin button {
+  height: 44px;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  z-index: 1;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.login-card label {
+  color: #000000;
+}
+
+.login-card .form-signin .form-control:focus, .register-card .form-signin .form-control:focus {
+  border-radius: 0.5rem;
+}
+
+.login-card .btn.btn-signin, .login-card .btn.btn-signin:active, .register-card .btn.btn-signin, .register-card .btn.btn-signin:active {
+  background: var(--uv-green);
+  border-color: var(--uv-green);
+  line-height: 1.25rem;
+}
+
+.login-card .cadastre-se, .register-card .login {
+  color: var(--navbar-dark-blue);
+  font-size: 15px;
+}
+
+.login-card .forgot-password:hover, .login-card .forgot-password:active, .login-card .forgot-password:focus {
+  color: rgb(12, 97, 33);
+}
+
+.card-img-overlay h4, {
+}
+
+.card-img-overlay p, .card-img-overlay a {
+  color: white;
+  text-decoration: none;
+}
+

@@ -1,0 +1,220 @@
+:root {
+  --backgroung-blue: #d5e8e8;
+  --navbar-dark-blue: #192d47;
+  --uv-green: #00a442;
+  --uv-dark-green: #003114;
+  --uv-red: #c24261;
+  --uv-turquoise: #1793A5;
+  --uv-font-logo: "Happy Monkey", sans-serif;
+  --uv-font-header: "Belgrano" , sans-serif;
+  --uv-font-text: "Martel Sans", Roboto, sans-serif;
+}
+
+.navbar {
+  background: var(--navbar-dark-blue);
+}
+
+.navbar img {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.navbar-brand span {
+  color: var(--backgroung-blue);
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-family: var(--uv-font-logo);
+}
+
+#navcol-1 {
+  justify-content: end;
+}
+
+#login {
+  background: var(--uv-green);
+}
+
+#cadastro {
+  background: var(--uv-red);
+}
+
+#navcol-1 .btn, #cta .btn {
+  border: none;
+  margin: 0 10px;
+}
+
+#hero_div {
+  height: calc(100vh - 75px);
+}
+
+#hero_text input {
+  height: 48px;
+  width: 215px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+#hero_text input:focus-visible {
+  border: none;
+}
+
+#hero_text fieldset .btn {
+  max-width: fit-content;
+  margin-left: 20px;
+  margin-top: -5px;
+  color: white;
+  border-color: var(--uv-green);
+  background-color: var(--uv-green);
+}
+
+#nova_eleicao {
+  width: 420px;
+  margin-top: 20px;
+  background-color: var(--uv-red);
+  border-color: var(--uv-red);
+}
+
+#hero_text p {
+  margin: 15px 0 80px;
+}
+
+#overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000000bb;
+}
+
+.cadastre-se:hover, .cadastre-se:active, .login:hover, .login:active {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.form-signin ::placeholder {
+  color: var(--navbar-dark-blue);
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.register-card {
+  width: 420px;
+  right: calc(50vw - 210px);
+  top: calc(50vh - 302px);
+}
+
+.login-card {
+  width: 320px;
+  right: calc(50vw - 160px);
+  top: calc(50vh - 206px);
+}
+
+#perfil .fa.fa-user {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#perfil {
+  background-color: var(--uv-turquoise);
+}
+
+#hero_div .container:first-child {
+  background: url("../../assets/img/ilustracao-uol-confere-sigilo-nas-urnas-por-voto-por-celular-1603140056762_v2_900x506-removebg-preview.png") center left -50px / 65% no-repeat;
+}
+
+body {
+  background: var(--backgroung-blue);
+}
+
+#title h1 {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  color: var(--navbar-dark-blue);
+  font-family: var(--uv-font-header);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#about img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+}
+
+.row {
+  margin-bottom: 30px;
+}
+
+h2 {
+  text-align: center;
+  overflow: hidden;
+}
+
+h2:after, h2:before {
+  background-color: var(--navbar-dark-blue);
+  content: "";
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h2:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+h2:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+#candidate-se, #votar {
+  background-color: var(--uv-green);
+}
+
+#resultados, #resultados-p {
+  background-color: var(--uv-red);
+}
+
+.card-img-overlay {
+  top: 270px;
+  padding-top: 20px;
+  overflow: hidden;
+  background: rgba(0,0,0,0.7);
+  border-radius: 0 0 20px 20px;
+}
+
+.card-img-overlay h4, .card-img-overlay h5 {
+  color: white;
+  text-align: center;
+}
+
+.card-img-overlay:hover {
+  top: 0;
+  border-radius: 20px;
+}
+
+.card {
+  border-radius: 20px;
+}
+
+.card-img {
+  height: 370px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.btn, p, span, a {
+  font-family: var(--uv-font-text);
+}
+
