@@ -1,4 +1,4 @@
-.login-card, .register-card {
+.login-card, .register-card, .candidate-card {
   padding: 40px 40px;
   background-color: var(--backgroung-blue);
   border-radius: 0.5rem;
@@ -6,7 +6,7 @@
   position: fixed;
 }
 
-.login-card .profile-img-card, .register-card .profile-img-card {
+.login-card .profile-img-card, .register-card .profile-img-card, .candidate-card .profile-img-card {
   width: 96px;
   height: 96px;
   margin: 0 auto 10px;
@@ -54,15 +54,33 @@
   box-sizing: border-box;
 }
 
+.candidate-card .form-signin textarea, .form-check label {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  z-index: 1;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.candidate-card .form-signin input[type=data], .candidate-card .form-signin input[type=password], .candidate-card .form-signin input[type=text], .candidate-card .form-signin button {
+  height: 44px;
+  width: 100%;
+  margin-bottom: 20px;
+  z-index: 1;
+  position: relative;
+  box-sizing: border-box;
+}
+
 .login-card label {
   color: #000000;
 }
 
-.login-card .form-signin .form-control:focus, .register-card .form-signin .form-control:focus {
+.login-card .form-signin .form-control:focus, .register-card .form-signin .form-control:focus, .candidate-card .form-signin .form-control:focus {
   border-radius: 0.5rem;
 }
 
-.login-card .btn.btn-signin, .login-card .btn.btn-signin:active, .register-card .btn.btn-signin, .register-card .btn.btn-signin:active {
+.login-card .btn.btn-signin, .login-card .btn.btn-signin:active, .register-card .btn.btn-signin, .register-card .btn.btn-signin:active, .candidate-card .btn.btn-signin, .candidate-card .btn.btn-signin:active {
   background: var(--uv-green);
   border-color: var(--uv-green);
   line-height: 1.25rem;
@@ -83,5 +101,76 @@
 .card-img-overlay p, .card-img-overlay a {
   color: white;
   text-decoration: none;
+}
+
+.candidate-card .form-signin .form-control[type=file] {
+  margin-bottom: 20px;
+  font-size: small;
+  color: var(--bs-secondary-color);
+}
+
+#new_election input {
+}
+
+#new_election .form-label {
+  width: 200px;
+  height: fit-content;
+  padding: 5px 10px;
+  margin-bottom: 0;
+}
+
+.input-group {
+  align-items: center;
+  margin: 20px 0;
+}
+
+.btn-toolbar {
+  flex-direction: column;
+  width: fit-content;
+}
+
+#keyboard .btn {
+  background-color: #404040;
+  border-color: #404040;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.btn-group {
+  width: fit-content;
+  margin: auto;
+}
+
+#vote_field {
+  width: 200px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+}
+
+.vote-card {
+  width: 90vw;
+  height: 80vh;
+  background-color: white;
+  position: fixed;
+  padding: 80px;
+  top: 10vh;
+  left: 5vw;
+  border-radius: 1.5rem;
+}
+
+.vote-card img {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}
+
+#candidate_pic {
+  height: calc(80vh - 160px);
 }
 

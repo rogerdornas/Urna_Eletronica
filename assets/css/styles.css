@@ -86,6 +86,7 @@
   top: 0;
   left: 0;
   background-color: #000000bb;
+  z-index: 1;
 }
 
 .cadastre-se:hover, .cadastre-se:active, .login:hover, .login:active {
@@ -103,6 +104,12 @@
   width: 420px;
   right: calc(50vw - 210px);
   top: calc(50vh - 302px);
+}
+
+.candidate-card {
+  width: 420px;
+  right: calc(50vw - 210px);
+  top: calc(50vh - 358px);
 }
 
 .login-card {

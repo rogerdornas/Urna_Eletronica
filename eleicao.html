@@ -6,22 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>UrnaVirtual</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/Belgrano.css">
-    <link rel="stylesheet" href="assets/css/Happy%20Monkey.css">
-    <link rel="stylesheet" href="assets/css/Martel%20Sans.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Belgrano&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Happy+Monkey&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martel+Sans&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/Google-Style-Login-.css">
     <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
+    <link rel="stylesheet" href="assets/css/Number-Input-Without-Arrow.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <!-- Start: Navbar With Button -->
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img src="assets/img/11.png"><span>URNA VIRTUAL</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1"><button class="btn btn-primary" id="login" type="button">Log In</button><button class="btn btn-primary" id="cadastro" type="button">Cadastre-se</button><button class="btn btn-primary d-none" id="perfil" type="button">Bem-vindo(a), *primeiro nome*<i class="fa fa-user"></i></button></div>
         </div>
-    </nav><!-- End: Navbar With Button -->
+    </nav>
+    <div id="overlay" class="d-none">
+        <div class="login-card d-none"><img class="profile-img-card" src="assets/img/user.png">
+            <form class="form-signin"><span class="reauth-email"> </span><input class="form-control" type="email" id="inputEmail" required="" placeholder="Email" autofocus=""><input class="form-control" type="password" id="inputPassword" required="" placeholder="Senha">
+                <div class="checkbox"></div><button class="btn btn-primary btn-lg d-block btn-signin" type="submit">Log In</button>
+            </form><a class="cadastre-se" href="#">Não tem uma conta? Cadastre-se!</a>
+        </div>
+        <div class="vote-card d-none">
+            <div class="row">
+                <div class="col-12 col-lg-7 text-center" id="candidate_pic"><img src="assets/img/urna-eleitoral-traducoes-fim-significa-fim-urna-urna-eleitoral-eleitoral-ilustracao-das-acoes_100456-1736-PhotoRoom.png-PhotoRoom.png" width="596" height="640"></div>
+                <div class="col"><input type="number">
+                    <div class="btn-toolbar" id="keyboard">
+                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button">7</button><button class="btn btn-primary" type="button">8</button><button class="btn btn-primary" type="button">9</button></div>
+                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button">4</button><button class="btn btn-primary" type="button">5</button><button class="btn btn-primary" type="button">6</button></div>
+                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button">1</button><button class="btn btn-primary" type="button">2</button><button class="btn btn-primary" type="button">3</button></div>
+                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button">0</button></div>
+                    </div>
+                    <div class="btn-group" role="group"><button class="btn btn-primary" id="vote" type="button">Votar</button><button class="btn btn-primary" id="erase" type="button">Corrigir</button><button class="btn btn-primary" id="blank" type="button">Branco</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="register-card d-none"><img class="profile-img-card" src="assets/img/clipboard.png">
+            <form class="form-signin"><span class="reauth-email"> </span><input class="form-control" type="text" required="" placeholder="Nome*" autofocus=""><input class="form-control" type="email" required="" placeholder="Email*"><input class="form-control" required="" placeholder="Data de Nascimento*" type="data"><input class="form-control" type="password" required="" placeholder="Senha*"><input class="form-control" type="password" required="" placeholder="Confirmar Senha*">
+                <div class="checkbox"></div><button class="btn btn-primary btn-lg d-block btn-signin" type="submit">Cadastrar</button>
+            </form><a class="login" href="#">Já tem uma conta? Ir para Login</a>
+        </div>
+        <div class="candidate-card d-none"><img class="profile-img-card" src="assets/img/candidato.png">
+            <form class="form-signin"><input class="form-control" type="text" required="" placeholder="Nome*" autofocus="" readonly=""><input class="form-control" type="text" required="" placeholder="Apelido"><input class="form-control" required="" placeholder="Data de Nascimento*" type="data" readonly=""><textarea class="form-control" placeholder="Sobre mim" rows="5"></textarea><input class="form-control" type="file" required="" accept="image/*">
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Declaro que li e estou de acordo com as condições para candidatura</label></div><button class="btn btn-primary btn-lg d-block btn-signin" type="submit">Enviar Candidatura</button>
+            </form>
+        </div>
+    </div>
     <div class="container">
         <section>
             <div class="row" id="title">

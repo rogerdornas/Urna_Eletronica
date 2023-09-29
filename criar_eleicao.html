@@ -6,15 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>UrnaVirtual</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/Belgrano.css">
-    <link rel="stylesheet" href="assets/css/Happy%20Monkey.css">
-    <link rel="stylesheet" href="assets/css/Martel%20Sans.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Belgrano&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Happy+Monkey&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martel+Sans&amp;display=swap">
     <link rel="stylesheet" href="assets/css/Google-Style-Login-.css">
     <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
+    <link rel="stylesheet" href="assets/css/Number-Input-Without-Arrow.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
+    <div class="container">
+        <section style="padding-top: 40px;">
+            <div class="row">
+                <div class="col">
+                    <h1>Heading</h1>
+                    <form id="new_election">
+                        <div class="input-group"><label class="form-label">Nome</label><input class="form-control" type="text"></div>
+                        <div class="input-group"><label class="form-label">Cargo</label><input class="form-control" type="text"></div>
+                        <div class="input-group"><label class="form-label">Instituição</label><input class="form-control" type="text"></div>
+                        <div class="input-group"><label class="form-label">Data e hora de início</label><input class="form-control" type="datetime-local"></div>
+                        <div class="input-group"><label class="form-label">Data e hora de termino</label><input class="form-control" type="datetime-local"></div>
+                        <div class="input-group"><label class="form-label">Pré-requisitos da candidatura</label><textarea class="form-control"></textarea></div>
+                        <div class="input-group"><label class="form-label">Pré-requisitos para votar</label><textarea class="form-control"></textarea></div><button class="btn btn-primary" id="create_election" type="submit">Criar eleição</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
 </body>
