@@ -109,13 +109,20 @@
 .candidate-card {
   width: 420px;
   right: calc(50vw - 210px);
-  top: calc(50vh - 358px);
+  top: max(50px, calc(50vh - 390px));
+  bottom: max(50px, calc(50vh - 390px));
 }
 
 .login-card {
   width: 320px;
   right: calc(50vw - 160px);
   top: calc(50vh - 206px);
+}
+
+.electorcode-card {
+  width: 320px;
+  right: calc(50vw - 160px);
+  top: calc(50vh - 134px);
 }
 
 #perfil .fa.fa-user {
@@ -194,7 +201,7 @@ h2:before {
 }
 
 .card-img-overlay {
-  top: 270px;
+  top: 260px;
   padding-top: 20px;
   overflow: hidden;
   background: rgba(0,0,0,0.7);
@@ -214,6 +221,7 @@ h2:before {
 .card {
   border-radius: 20px;
   margin-bottom: 25px;
+  background-color: var(--backgroung-blue);
 }
 
 .card-img {
@@ -259,19 +267,16 @@ h2:before {
   border-color: var(--uv-red);
 }
 
-#content_col .card-img-overlay {
-  top: 255px;
+#tab-3 .card-img-overlay {
+  top: 215px;
 }
 
-#content_col .card-img-overlay:hover {
+#tab-3 .card-img-overlay:hover {
   top: 0;
 }
 
 #content_col .container {
   padding: 40px;
-}
-
-.btn {
 }
 
 #profile_nova_eleicao {
@@ -287,9 +292,56 @@ h2:before {
 #create_election {
   background-color: var(--uv-green);
   border-color: var(--uv-green);
+  margin-top: 15px;
 }
 
 #graph img {
   width: 100%;
+}
+
+#candidates {
+  max-width: 1100px;
+  margin: auto;
+}
+
+#ballot_btn {
+  margin-top: 15px;
+}
+
+#ballot_btn .btn {
+  margin: 0 10px;
+  border-radius: 10px;
+  width: 120px;
+  border-width: 3px;
+}
+
+#kboard_col {
+  height: fit-content;
+}
+
+#vote {
+  background-color: var(--uv-green);
+  border-color: var(--uv-green);
+}
+
+#erase {
+  background-color: var(--uv-red);
+  border-color: var(--uv-red);
+}
+
+#blank {
+  background-color: white;
+  border-color: var(--uv-turquoise);
+  color: var(--uv-turquoise);
+}
+
+.progress {
+  height: 40px;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  background-color: var(--uv-turquoise);
+  background-image: linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);
 }
 

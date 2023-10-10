@@ -1,4 +1,4 @@
-.login-card, .register-card, .candidate-card {
+.login-card, .register-card, .candidate-card, .electorcode-card {
   padding: 40px 40px;
   background-color: var(--backgroung-blue);
   border-radius: 0.5rem;
@@ -44,6 +44,16 @@
   box-sizing: border-box;
 }
 
+.electorcode-card input[type=number], .electorcode-card button {
+  height: 44px;
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+  z-index: 1;
+  position: relative;
+  box-sizing: border-box;
+}
+
 .register-card .form-signin input[type=email], .register-card .form-signin input[type=data], .register-card .form-signin input[type=password], .register-card .form-signin input[type=text], .register-card .form-signin button {
   height: 44px;
   width: 100%;
@@ -80,7 +90,7 @@
   border-radius: 0.5rem;
 }
 
-.login-card .btn.btn-signin, .login-card .btn.btn-signin:active, .register-card .btn.btn-signin, .register-card .btn.btn-signin:active, .candidate-card .btn.btn-signin, .candidate-card .btn.btn-signin:active {
+.login-card .btn.btn-signin, .login-card .btn.btn-signin:active, .electorcode-card .btn.btn-signin, .electorcode-card .btn.btn-signin:active, .register-card .btn.btn-signin, .register-card .btn.btn-signin:active, .candidate-card .btn.btn-signin, .candidate-card .btn.btn-signin:active {
   background: var(--uv-green);
   border-color: var(--uv-green);
   line-height: 1.25rem;
@@ -131,16 +141,18 @@
 .btn-toolbar {
   flex-direction: column;
   width: fit-content;
+  margin: auto;
 }
 
 #keyboard .btn {
   background-color: #404040;
   border-color: #404040;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   margin: 10px;
   border-radius: 10px;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .btn-group {
@@ -156,13 +168,13 @@
 }
 
 .vote-card {
-  width: 90vw;
+  width: 70vw;
   height: 80vh;
-  background-color: white;
+  background-color: var(--backgroung-blue);
   position: fixed;
-  padding: 80px;
+  padding: 60px;
   top: 10vh;
-  left: 5vw;
+  left: 15vw;
   border-radius: 1.5rem;
 }
 
@@ -215,5 +227,24 @@
 li.nav-item:focus-visible {
   outline: none;
   border: none;
+}
+
+#results {
+  max-width: 1200px;
+}
+
+.graph {
+  width: 90%;
+  margin: auto;
+}
+
+.electorcode-card p {
+  font-size: 20px;
+}
+
+@media (max-height: 880px) {
+  .candidate-card {
+    overflow: overlay;
+  }
 }
 

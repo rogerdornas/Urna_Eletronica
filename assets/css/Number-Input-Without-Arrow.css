@@ -3,7 +3,11 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number] {
+#ballot_input {
   -moz-appearance: textfield;
+  border: none;
+  box-shadow: 0px 0px 5px -2px var(--uv-turquoise);
+  width: 250px;
+  margin-bottom: 20px;
 }
 
