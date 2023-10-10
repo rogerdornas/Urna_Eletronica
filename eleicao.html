@@ -18,8 +18,8 @@
 
 <body>
     <nav class="navbar navbar-expand-md navbar-light">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img src="assets/img/11.png"><span>URNA VIRTUAL</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1"><button class="btn btn-primary" id="login" type="button">Log In</button><button class="btn btn-primary" id="cadastro" type="button">Cadastre-se</button><button class="btn btn-primary d-none" id="perfil" type="button">Bem-vindo(a), *primeiro nome*<i class="fa fa-user"></i></button></div>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><img src="assets/img/11.png"><span>URNA VIRTUAL</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1"><button class="btn btn-primary" id="login" type="button">Log In</button><button class="btn btn-primary" id="cadastro" type="button">Cadastre-se</button><a class="btn btn-primary" role="button" id="perfil" href="perfil.html">Bem-vindo(a), *primeiro nome*<i class="fa fa-user"></i></a></div>
         </div>
     </nav>
     <div id="overlay" class="d-none">
@@ -48,8 +48,8 @@
             </form><a class="login" href="#">Já tem uma conta? Ir para Login</a>
         </div>
         <div class="candidate-card d-none"><img class="profile-img-card" src="assets/img/candidato.png">
-            <form class="form-signin"><input class="form-control" type="text" required="" placeholder="Nome*" autofocus="" readonly=""><input class="form-control" type="text" required="" placeholder="Apelido"><input class="form-control" required="" placeholder="Data de Nascimento*" type="data" readonly=""><textarea class="form-control" placeholder="Sobre mim" rows="5"></textarea><input class="form-control" type="file" required="" accept="image/*">
-                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Declaro que li e estou de acordo com as condições para candidatura</label></div><button class="btn btn-primary btn-lg d-block btn-signin" type="submit">Enviar Candidatura</button>
+            <form class="form-signin"><input class="form-control" type="text" required="" placeholder="Nome*" autofocus="" readonly=""><input class="form-control" type="text" placeholder="Apelido"><input class="form-control" required="" placeholder="Data de Nascimento*" type="data" readonly=""><textarea class="form-control" placeholder="Sobre mim" rows="5"></textarea><input class="form-control" type="file" required="" accept="image/*">
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1" required=""><label class="form-check-label" for="formCheck-1">Declaro que li e estou de acordo com as condições para candidatura</label></div><button class="btn btn-primary btn-lg d-block btn-signin" type="submit">Enviar Candidatura</button>
             </form>
         </div>
     </div>
@@ -64,13 +64,13 @@
                 <div class="col-12 col-md-4 text-center align-self-center" style="height: inherit;"><img src="assets/img/urna-eleitoral-traducoes-fim-significa-fim-urna-urna-eleitoral-eleitoral-ilustracao-das-acoes_100456-1736-PhotoRoom.png-PhotoRoom.png"></div>
                 <div class="col-12 col-md-8 align-self-center">
                     <h4>Sobre</h4>
-                    <p><span>Data e Hora de Início:&nbsp;</span>&nbsp;*xx/xx/xxxx*</p>
-                    <p><span>Data e Hora de Término:&nbsp;</span>&nbsp;*xx/xx/xxxx*</p>
-                    <p><span>Posição a ser preenchida:&nbsp;</span>&nbsp;***</p>
-                    <p><span>Instituição:</span>&nbsp; ***</p>
+                    <p id="election_inicio"><span>Data e Hora de Início:&nbsp;</span>&nbsp;*xx/xx/xxxx*</p>
+                    <p id="election_fim"><span>Data e Hora de Término:&nbsp;</span>&nbsp;*xx/xx/xxxx*</p>
+                    <p id="election_posicao"><span>Posição a ser preenchida:&nbsp;</span>&nbsp;***</p>
+                    <p id="election_instituicao"><span>Instituição:</span>&nbsp; ***</p>
                 </div>
             </div>
-            <div class="row justify-content-around" id="about-1" style="max-height: fit-content;">
+            <div class="row justify-content-around" id="rules" style="max-height: fit-content;">
                 <div class="col-auto" id="regras_candidatura">
                     <h4>Requisitos para se candidatar</h4>
                     <ul>
@@ -94,7 +94,7 @@
                 <div class="col text-center"><button class="btn btn-primary" id="candidate-se" type="button">Candidate-se</button><button class="btn btn-primary d-none" id="votar" type="button">Votar</button><button class="btn btn-primary d-none" id="resultados-p" type="button">Ver resultados parciais</button><button class="btn btn-primary d-none" id="resultados" type="button">Ver resultado</button></div>
             </div>
         </section>
-        <section id="candidates" style="height: 200px;">
+        <section id="candidates">
             <div class="row">
                 <div class="col">
                     <h2>Candidatos</h2>
@@ -104,10 +104,10 @@
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <div class="card"><img class="card-img w-100 d-block" src="assets/img/user.png">
                         <div class="card-img-overlay">
-                            <h4>*Nome*</h4>
-                            <h5>*Apelido*</h5>
-                            <p>*Idade*</p>
-                            <p>*Sobre mim*</p>
+                            <h4 id="candidato_nome">*Nome*</h4>
+                            <h5 id="candidato_apelido">*Apelido*</h5>
+                            <p id="candidato_idade">*Idade*</p>
+                            <p id="candidato_sobre">*Sobre mim*</p>
                         </div>
                     </div>
                 </div>

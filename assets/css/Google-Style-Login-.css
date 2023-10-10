@@ -109,7 +109,9 @@
   color: var(--bs-secondary-color);
 }
 
-#new_election input {
+#new_election input, #new_election textarea {
+  width: calc(100% - 200px);
+  margin: 20px 0;
 }
 
 #new_election .form-label {
@@ -117,6 +119,8 @@
   height: fit-content;
   padding: 5px 10px;
   margin-bottom: 0;
+  float: left;
+  text-align: start;
 }
 
 .input-group {
@@ -172,5 +176,44 @@
 
 #candidate_pic {
   height: calc(80vh - 160px);
+}
+
+.nav-tabs {
+  width: 250px;
+  background-color: var(--navbar-dark-blue);
+  position: sticky;
+  height: 101vh;
+  top: -2px;
+  padding: 10px 0;
+}
+
+.tab-content {
+  height: 150vh;
+}
+
+#nav_col {
+  max-width: fit-content;
+  padding-right: 0;
+}
+
+#profile {
+  margin-bottom: 0;
+  --bs-gutter-x: 0;
+}
+
+#nav_col .nav-link {
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#nav_col .nav-link:hover, #nav_col .nav-link:focus {
+  border: none;
+}
+
+li.nav-item:focus-visible {
+  outline: none;
+  border: none;
 }
 

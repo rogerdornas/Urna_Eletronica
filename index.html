@@ -19,7 +19,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container"><a class="navbar-brand d-flex align-items-center" id="logo" href="#"><img src="assets/img/11.png"><span>URNA VIRTUAL</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1"><button class="btn btn-primary" id="login" type="button">Log In</button><button class="btn btn-primary" id="cadastro" type="button">Cadastre-se</button><button class="btn btn-primary d-none" id="perfil" type="button">Bem-vindo(a), *primeiro nome*<i class="fa fa-user"></i></button></div>
+            <div class="collapse navbar-collapse" id="navcol-1"><button class="btn btn-primary" id="login" type="button">Log In</button><button class="btn btn-primary" id="cadastro" type="button">Cadastre-se</button><a class="btn btn-primary" role="button" id="perfil" href="perfil.html">Bem-vindo(a), *primeiro nome*<i class="fa fa-user"></i></a></div>
         </div>
     </nav>
     <div id="overlay" class="d-none">
@@ -39,10 +39,10 @@
             <div class="container h-100">
                 <div class="row h-100 justify-content-end">
                     <div class="col-12 col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center" id="hero_text">
-                        <div style="max-width: 450px;">
+                        <div>
                             <h1 class="text-uppercase fw-bold">faça sua eleição online</h1>
                             <p>Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue interdum.</p>
-                            <fieldset><input type="text"><button class="btn btn-primary btn-lg" type="button">Encontrar Eleição</button></fieldset><a class="btn btn-primary btn-lg" role="button" id="nova_eleicao" href="">Criar Nova Eleição</a>
+                            <form><input class="form-control" type="text" id="election_code"><button class="btn btn-primary btn-lg" type="submit">Encontrar Eleição</button></form><a class="btn btn-primary btn-lg" role="button" id="nova_eleicao" href="">Criar Nova Eleição</a>
                         </div>
                     </div>
                 </div>

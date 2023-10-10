@@ -18,10 +18,69 @@
 
 <body>
     <nav class="navbar navbar-expand-md navbar-light">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img src="assets/img/11.png"><span>URNA VIRTUAL</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1"><button class="btn btn-primary" id="perfil" type="button">Bem-vindo(a), *primeiro nome*<i class="fa fa-user"></i></button></div>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><img src="assets/img/11.png"><span>URNA VIRTUAL</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1"><a class="btn btn-primary" role="button" id="perfil" href="perfil.html">Bem-vindo(a), *primeiro nome*<i class="fa fa-user"></i></a></div>
         </div>
     </nav>
+    <section>
+        <div class="row" id="profile">
+            <div class="col" id="nav_col">
+                <ul class="nav nav-tabs flex-column" role="tablist">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#tab-1" role="tab" data-bs-toggle="tab">Dados Pessoais</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-2" role="tab" data-bs-toggle="tab">Minhas Eleições</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-3" role="tab" data-bs-toggle="tab">Minhas Candidaturas</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-4" role="tab" data-bs-toggle="tab">Eleições Acompanhadas</a></li>
+                </ul>
+            </div>
+            <div class="col" id="content_col">
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane" role="tabpanel" style="height: 100%;">
+                        <div class="container" id="personal_info">
+                            <p id="profile_nome">Nome:&nbsp;<span>***Nome Completo***</span></p>
+                            <p id="profile_email">Email:&nbsp;<span>***Email***</span></p>
+                            <p id="profile_data_nascimento">Data de Nascimento:&nbsp;<span>***00/00/0000***</span></p>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane" role="tabpanel" style="height: 100%;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col text-end"><a class="btn btn-primary" role="button" id="profile_nova_eleicao" href="criar_eleicao.html">Nova Eleição</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="card"><img class="card-img w-100 d-block" src="assets/img/urna-eleitoral-traducoes-fim-significa-fim-urna-urna-eleitoral-eleitoral-ilustracao-de-estoque-vetorial_100456-2562.webp">
+                                        <div class="card-img-overlay d-flex flex-column">
+                                            <h4 id="myelection_nome">*Nome*</h4>
+                                            <p id="myelection_periodo">*xx/xx/xx xx:xx a xx/xx/xx xx:xx*</p>
+                                            <p id="myelection_posicao">*Posição a ser votada*</p>
+                                            <p id="myelection_instituicao">*Instituição*</p><button class="btn btn-primary btn-lg" type="button">Editar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane" role="tabpanel" style="height: 100%;"></div>
+                    <div id="tab-4" class="tab-pane active" role="tabpanel" style="height: 100%;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="card"><img class="card-img w-100 d-block" src="assets/img/urna-eleitoral-traducoes-fim-significa-fim-urna-urna-eleitoral-eleitoral-ilustracao-de-estoque-vetorial_100456-2562.webp">
+                                        <div class="card-img-overlay d-flex flex-column">
+                                            <h4 id="acpelection_nome">*Nome*</h4>
+                                            <p id="acpelection_periodo">*xx/xx/xx xx:xx a xx/xx/xx xx:xx*</p>
+                                            <p id="acpelection_posicao">*Posição a ser votada*</p>
+                                            <p id="acpelection_instituicao">*Instituição*</p><button class="btn btn-primary btn-lg" type="button">Ver Resultado</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
 </body>

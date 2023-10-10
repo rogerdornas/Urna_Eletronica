@@ -53,23 +53,23 @@
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: none;
+  float: left;
 }
 
 #hero_text input:focus-visible {
   border: none;
 }
 
-#hero_text fieldset .btn {
+#hero_text form .btn {
   max-width: fit-content;
   margin-left: 20px;
-  margin-top: -5px;
   color: white;
   border-color: var(--uv-green);
   background-color: var(--uv-green);
 }
 
 #nova_eleicao {
-  width: 420px;
+  width: 436px;
   margin-top: 20px;
   background-color: var(--uv-red);
   border-color: var(--uv-red);
@@ -213,6 +213,7 @@ h2:before {
 
 .card {
   border-radius: 20px;
+  margin-bottom: 25px;
 }
 
 .card-img {
@@ -223,5 +224,72 @@ h2:before {
 
 .btn, p, span, a {
   font-family: var(--uv-font-text);
+}
+
+#nav_col .nav-tabs .nav-link.active {
+  background-color: var(--navbar-dark-blue);
+  border-radius: 0;
+  border: none;
+  color: #9acfd6;
+  border-bottom: 3px solid var(--uv-turquoise);
+  border-top: 3px solid var(--uv-turquoise);
+  box-sizing: border-box;
+}
+
+#hero_text div {
+  max-width: 450px;
+}
+
+#personal_info {
+  padding: 50px;
+}
+
+#content_col .card .btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0;
+  background-color: var(--uv-green);
+  border-color: var(--uv-green);
+}
+
+#content_col #tab-4 .card .btn {
+  background-color: var(--uv-red);
+  border-color: var(--uv-red);
+}
+
+#content_col .card-img-overlay {
+  top: 255px;
+}
+
+#content_col .card-img-overlay:hover {
+  top: 0;
+}
+
+#content_col .container {
+  padding: 40px;
+}
+
+.btn {
+}
+
+#profile_nova_eleicao {
+  background-color: var(--uv-red);
+  border-color: var(--uv-red);
+}
+
+#create_election_container {
+  max-width: 900px;
+  margin: auto;
+}
+
+#create_election {
+  background-color: var(--uv-green);
+  border-color: var(--uv-green);
+}
+
+#graph img {
+  width: 100%;
 }
 

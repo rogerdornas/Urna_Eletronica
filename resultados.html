@@ -23,12 +23,48 @@
         </div>
     </nav>
     <div class="container">
-        <section style="padding-top: 40px;">
-            <div class="row">
-                <div class="col text-center" id="create_election_container">
-                    <h1>Nova Eleição</h1>
-                    <form id="new_election"><label class="form-label">Nome</label><input class="form-control" type="text"><label class="form-label">Cargo</label><input class="form-control" type="text"><label class="form-label">Instituição</label><input class="form-control" type="text"><label class="form-label">Data e hora de início</label><input class="form-control" type="datetime-local"><label class="form-label">Data e hora de termino</label><input class="form-control" type="datetime-local"><label class="form-label">Pré-requisitos da candidatura</label><textarea class="form-control"></textarea><label class="form-label">Pré-requisitos para votar</label><textarea class="form-control"></textarea><button class="btn btn-primary" id="create_election" type="submit">Criar Eleição</button></form>
+        <section>
+            <div class="row" id="title">
+                <div class="col">
+                    <h1>*Nome da Votação*</h1>
                 </div>
+            </div>
+            <div class="row" id="stats">
+                <div class="col-12">
+                    <h3>Estatísticas</h3>
+                </div>
+                <div class="col">
+                    <p>Numero de Votos: ***</p>
+                    <p>Numero de Votos: ***</p>
+                </div>
+                <div class="col">
+                    <p>Numero de Votos: ***</p>
+                    <p>Numero de Votos: ***</p>
+                </div>
+            </div>
+            <div class="row" id="progress">
+                <div class="col-12">
+                    <h3>Tempo Percorrido</h3>
+                </div>
+                <div class="col">
+                    <div class="progress">
+                        <div class="progress-bar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="graph">
+                <div class="col-12">
+                    <h3>Grafico 1</h3>
+                </div>
+                <div class="col-12"><img src="assets/img/baixados%20(1).png"></div>
+                <div class="col-6">
+                    <h3>Grafico 2</h3>
+                </div>
+                <div class="col-6">
+                    <h3>Grafico 3</h3>
+                </div>
+                <div class="col-6"><img src="assets/img/baixados.png"></div>
+                <div class="col-6"><img src="assets/img/baixados.png"></div>
             </div>
         </section>
     </div>
