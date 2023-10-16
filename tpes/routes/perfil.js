@@ -3,7 +3,7 @@ const path = require('path');
 const router = express.Router();
 const pool = require("./../dbConnection");
 
-/* GET home page. */
+/* GET perfil page (loaded from indexAuthent). */
 router.get('/', function(req, res, next) {
 
   if (req.headers.token == 'we221e32342342342342342weaeaEWWAWE@4123') {
