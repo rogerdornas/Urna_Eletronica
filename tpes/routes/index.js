@@ -8,8 +8,6 @@ router.get('/', function(req, res, next) {
   res.sendFile(path.join(__dirname, '../public', 'index.html'));
 });
 
-const jwt = require('jsonwebtoken')
-
 /* user authentication */
 
 function tryAuthentication(sql, callback) {
@@ -40,7 +38,6 @@ router.post('/loginData', function(req, res, next) {
 
     if (callbackReturn.msg == "logged") {
 
-      //const token = jwt.sign({id: callbackReturn.user["ID"]},'we221e32342342342342342weaeaEWWAWE@4123', {expiresIn: '1h'});
       const token = 'we221e32342342342342342weaeaEWWAWE@4123';
       res.send({message: callbackReturn.msg, t: token, user: callbackReturn.user});
     
