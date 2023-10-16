@@ -19,15 +19,10 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><img src="stylesheets/assets/img/11.png"><span>URNA VIRTUAL</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1"><button class="btn btn-primary" id="login" type="button">Log In</button><button class="btn btn-primary" id="cadastro" type="button">Cadastre-se</button><a class="btn btn-primary" role="button" id="perfil" href="perfil.html">Bem-vindo(a), *primeiro nome*<i class="fa fa-user"></i></a></div>
+            <div class="collapse navbar-collapse" id="navcol-1"><a class="btn btn-primary" role="button" id="perfil" href="perfil.html">Bem-vindo(a), *primeiro nome*<i class="fa fa-user"></i></a></div>
         </div>
     </nav>
     <div id="overlay" class="d-none">
-        <div class="login-card d-none"><img class="profile-img-card" src="stylesheets/assets/img/user.png">
-            <form class="form-signin"><span class="reauth-email"> </span><input class="form-control" type="email" id="inputEmail" required="" placeholder="Email" autofocus=""><input class="form-control" type="password" id="inputPassword" required="" placeholder="Senha">
-                <div class="checkbox"></div><button class="btn btn-primary btn-lg d-block btn-signin" type="submit">Log In</button>
-            </form><a class="cadastre-se" href="#">Não tem uma conta? Cadastre-se!</a>
-        </div>
         <div class="electorcode-card d-none">
             <p>Insira seu código de eleitor:</p>
             <form class="form-signin"><span class="reauth-email"> </span><input class="form-control" type="number" id="inputCode" required="" placeholder="0000" autofocus="">
@@ -47,11 +42,6 @@
                     <div class="btn-group" role="group" id="ballot_btn"><button class="btn btn-primary btn-lg" id="vote" type="submit">Votar</button><button class="btn btn-primary btn-lg" id="erase" type="button">Corrigir</button><button class="btn btn-primary btn-lg" id="blank" type="submit">Branco</button></div>
                 </div>
             </div>
-        </div>
-        <div class="register-card d-none"><img class="profile-img-card" src="stylesheets/assets/img/clipboard.png">
-            <form class="form-signin"><span class="reauth-email"> </span><input class="form-control" type="text" required="" placeholder="Nome*" autofocus=""><input class="form-control" type="email" required="" placeholder="Email*"><input class="form-control" required="" placeholder="Data de Nascimento*" type="data"><input class="form-control" type="password" required="" placeholder="Senha*"><input class="form-control" type="password" required="" placeholder="Confirmar Senha*">
-                <div class="checkbox"></div><button class="btn btn-primary btn-lg d-block btn-signin" type="submit">Cadastrar</button>
-            </form><a class="login" href="#">Já tem uma conta? Ir para Login</a>
         </div>
         <div class="candidate-card d-none"><img class="profile-img-card" src="stylesheets/assets/img/candidato.png">
             <form class="form-signin"><input class="form-control" type="text" required="" placeholder="Nome*" autofocus="" readonly=""><input class="form-control" type="text" placeholder="Apelido"><input class="form-control" required="" placeholder="Data de Nascimento*" type="data" readonly=""><textarea class="form-control" placeholder="Sobre mim" rows="5"></textarea><input class="form-control" type="file" required="" accept="image/*">
